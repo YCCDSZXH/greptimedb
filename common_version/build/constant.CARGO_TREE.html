@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="The dependency tree of the project, as output by `cargo tree`. Note that this variable may contain local file system paths for path dependencies, and may therefore contain sensitive information and not be reproducible."><title>CARGO_TREE in common_version::build - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-46f98efaafac5295.ttf.woff2,FiraSans-Regular-018c141bf0843ffd.woff2,FiraSans-Medium-8f9a781e4970d388.woff2,SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2,SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2" crossorigin href="../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../../static.files/rustdoc-081576b923113409.css"><meta name="rustdoc-vars" data-root-path="../../" data-static-root-path="../../static.files/" data-current-crate="common_version" data-themes="" data-resource-suffix="" data-rustdoc-version="1.79.0-nightly (f9b161492 2024-04-19)" data-channel="nightly" data-search-js="search-bf21c90c8c1d92b1.js" data-settings-js="settings-4313503d2e1961c2.js" ><script src="../../static.files/storage-e32f0c247825364d.js"></script><script defer src="sidebar-items.js"></script><script defer src="../../static.files/main-20a3ad099b048cf2.js"></script><noscript><link rel="stylesheet" href="../../static.files/noscript-09095024cf37855e.css"></noscript><link rel="alternate icon" type="image/png" href="../../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc constant"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle" title="show sidebar"></button></nav><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../../common_version/index.html">common_version</a><span class="version">0.9.1</span></h2></div><div class="sidebar-elems"><h2><a href="index.html">In common_version::build</a></h2></div></nav><div class="sidebar-resizer"></div><main><div class="width-limiter"><nav class="sub"><form class="search-form"><span></span><div id="sidebar-button" tabindex="-1"><a href="../../common_version/all.html" title="show sidebar"></a></div><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Type ‘S’ or ‘/’ to search, ‘?’ for more options…" type="search"><div id="help-button" tabindex="-1"><a href="../../help.html" title="help">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../settings.html" title="settings">Settings</a></div></form></nav><section id="main-content" class="content"><div class="main-heading"><h1>Constant <a href="../index.html">common_version</a>::<wbr><a href="index.html">build</a>::<wbr><a class="constant" href="#">CARGO_TREE</a><button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><span class="out-of-band"><a class="src" href="../../src/common_version/home/runner/work/greptimedb/greptimedb/target/debug/build/common-version-b517b73bbd799628/out/shadow.rs.html#74-216">source</a> · <button id="toggle-all-docs" title="collapse all docs">[<span>&#x2212;</span>]</button></span></div><pre class="rust item-decl"><code>pub const CARGO_TREE: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a> = r#&quot;
+├── const_format v0.2.32
+│   └── const_format_proc_macros v0.2.32 (proc-macro)
+│       ├── proc-macro2 v1.0.85
+│       │   └── unicode-ident v1.0.12
+│       ├── quote v1.0.36
+│       │   └── proc-macro2 v1.0.85 (*)
+│       └── unicode-xid v0.2.4
+└── shadow-rs v0.29.0
+    ├── const_format v0.2.32 (*)
+    ├── git2 v0.19.0
+    │   ├── bitflags v2.5.0
+    │   ├── libc v0.2.155
+    │   ├── libgit2-sys v0.17.0+1.8.1
+    │   │   ├── libc v0.2.155
+    │   │   └── libz-sys v1.1.18
+    │   │       └── libc v0.2.155
+    │   │       [build-dependencies]
+    │   │       ├── cc v1.0.99
+    │   │       │   ├── jobserver v0.1.31
+    │   │       │   │   └── libc v0.2.155
+    │   │       │   ├── libc v0.2.155
+    │   │       │   └── once_cell v1.19.0
+    │   │       ├── pkg-config v0.3.30
+    │   │       └── vcpkg v0.2.15
+    │   │   [build-dependencies]
+    │   │   ├── cc v1.0.99 (*)
+    │   │   └── pkg-config v0.3.30
+    │   ├── log v0.4.21
+    │   └── url v2.5.1
+    │       ├── form_urlencoded v1.2.1
+    │       │   └── percent-encoding v2.3.1
+    │       ├── idna v1.0.0
+    │       │   ├── icu_normalizer v1.5.0
+    │       │   │   ├── displaydoc v0.2.4 (proc-macro)
+    │       │   │   │   ├── proc-macro2 v1.0.85 (*)
+    │       │   │   │   ├── quote v1.0.36 (*)
+    │       │   │   │   └── syn v2.0.66
+    │       │   │   │       ├── proc-macro2 v1.0.85 (*)
+    │       │   │   │       ├── quote v1.0.36 (*)
+    │       │   │   │       └── unicode-ident v1.0.12
+    │       │   │   ├── icu_collections v1.5.0
+    │       │   │   │   ├── displaydoc v0.2.4 (proc-macro) (*)
+    │       │   │   │   ├── yoke v0.7.4
+    │       │   │   │   │   ├── stable_deref_trait v1.2.0
+    │       │   │   │   │   ├── yoke-derive v0.7.4 (proc-macro)
+    │       │   │   │   │   │   ├── proc-macro2 v1.0.85 (*)
+    │       │   │   │   │   │   ├── quote v1.0.36 (*)
+    │       │   │   │   │   │   ├── syn v2.0.66 (*)
+    │       │   │   │   │   │   └── synstructure v0.13.1
+    │       │   │   │   │   │       ├── proc-macro2 v1.0.85 (*)
+    │       │   │   │   │   │       ├── quote v1.0.36 (*)
+    │       │   │   │   │   │       └── syn v2.0.66 (*)
+    │       │   │   │   │   └── zerofrom v0.1.4
+    │       │   │   │   │       └── zerofrom-derive v0.1.4 (proc-macro)
+    │       │   │   │   │           ├── proc-macro2 v1.0.85 (*)
+    │       │   │   │   │           ├── quote v1.0.36 (*)
+    │       │   │   │   │           ├── syn v2.0.66 (*)
+    │       │   │   │   │           └── synstructure v0.13.1 (*)
+    │       │   │   │   ├── zerofrom v0.1.4 (*)
+    │       │   │   │   └── zerovec v0.10.2
+    │       │   │   │       ├── yoke v0.7.4 (*)
+    │       │   │   │       ├── zerofrom v0.1.4 (*)
+    │       │   │   │       └── zerovec-derive v0.10.2 (proc-macro)
+    │       │   │   │           ├── proc-macro2 v1.0.85 (*)
+    │       │   │   │           ├── quote v1.0.36 (*)
+    │       │   │   │           └── syn v2.0.66 (*)
+    │       │   │   ├── icu_normalizer_data v1.5.0
+    │       │   │   ├── icu_properties v1.5.0
+    │       │   │   │   ├── displaydoc v0.2.4 (proc-macro) (*)
+    │       │   │   │   ├── icu_collections v1.5.0 (*)
+    │       │   │   │   ├── icu_locid_transform v1.5.0
+    │       │   │   │   │   ├── displaydoc v0.2.4 (proc-macro) (*)
+    │       │   │   │   │   ├── icu_locid v1.5.0
+    │       │   │   │   │   │   ├── displaydoc v0.2.4 (proc-macro) (*)
+    │       │   │   │   │   │   ├── litemap v0.7.3
+    │       │   │   │   │   │   ├── tinystr v0.7.6
+    │       │   │   │   │   │   │   ├── displaydoc v0.2.4 (proc-macro) (*)
+    │       │   │   │   │   │   │   └── zerovec v0.10.2 (*)
+    │       │   │   │   │   │   ├── writeable v0.5.5
+    │       │   │   │   │   │   └── zerovec v0.10.2 (*)
+    │       │   │   │   │   ├── icu_locid_transform_data v1.5.0
+    │       │   │   │   │   ├── icu_provider v1.5.0
+    │       │   │   │   │   │   ├── displaydoc v0.2.4 (proc-macro) (*)
+    │       │   │   │   │   │   ├── icu_locid v1.5.0 (*)
+    │       │   │   │   │   │   ├── icu_provider_macros v1.5.0 (proc-macro)
+    │       │   │   │   │   │   │   ├── proc-macro2 v1.0.85 (*)
+    │       │   │   │   │   │   │   ├── quote v1.0.36 (*)
+    │       │   │   │   │   │   │   └── syn v2.0.66 (*)
+    │       │   │   │   │   │   ├── stable_deref_trait v1.2.0
+    │       │   │   │   │   │   ├── tinystr v0.7.6 (*)
+    │       │   │   │   │   │   ├── writeable v0.5.5
+    │       │   │   │   │   │   ├── yoke v0.7.4 (*)
+    │       │   │   │   │   │   ├── zerofrom v0.1.4 (*)
+    │       │   │   │   │   │   └── zerovec v0.10.2 (*)
+    │       │   │   │   │   ├── tinystr v0.7.6 (*)
+    │       │   │   │   │   └── zerovec v0.10.2 (*)
+    │       │   │   │   ├── icu_properties_data v1.5.0
+    │       │   │   │   ├── icu_provider v1.5.0 (*)
+    │       │   │   │   ├── tinystr v0.7.6 (*)
+    │       │   │   │   └── zerovec v0.10.2 (*)
+    │       │   │   ├── icu_provider v1.5.0 (*)
+    │       │   │   ├── smallvec v1.13.2
+    │       │   │   ├── utf16_iter v1.0.5
+    │       │   │   ├── utf8_iter v1.0.4
+    │       │   │   ├── write16 v1.0.0
+    │       │   │   └── zerovec v0.10.2 (*)
+    │       │   ├── icu_properties v1.5.0 (*)
+    │       │   ├── smallvec v1.13.2
+    │       │   └── utf8_iter v1.0.4
+    │       └── percent-encoding v2.3.1
+    ├── is_debug v1.0.1
+    ├── time v0.3.36
+    │   ├── deranged v0.3.11
+    │   │   └── powerfmt v0.2.0
+    │   ├── itoa v1.0.11
+    │   ├── libc v0.2.155
+    │   ├── num-conv v0.1.0
+    │   ├── num_threads v0.1.7
+    │   ├── powerfmt v0.2.0
+    │   └── time-core v0.1.2
+    └── tzdb v0.6.1
+        ├── iana-time-zone v0.1.60
+        ├── tz-rs v0.6.14
+        │   └── const_fn v0.4.10 (proc-macro)
+        └── tzdb_data v0.1.2
+            └── tz-rs v0.6.14 (*)
+[build-dependencies]
+├── build-data v0.2.1
+│   ├── chrono v0.4.38
+│   │   └── num-traits v0.2.19
+│   │       [build-dependencies]
+│   │       └── autocfg v1.3.0
+│   └── safe-regex v0.3.0
+│       └── safe-regex-macro v0.3.0 (proc-macro)
+│           ├── safe-proc-macro2 v1.0.67
+│           │   └── unicode-ident v1.0.12
+│           └── safe-regex-compiler v0.3.0
+│               ├── safe-proc-macro2 v1.0.67 (*)
+│               └── safe-quote v1.0.15
+│                   └── safe-proc-macro2 v1.0.67 (*)
+└── shadow-rs v0.29.0 (*)
+&quot;#;</code></pre><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>The dependency tree of the project, as output by <code>cargo tree</code>.
+Note that this variable may contain local file system paths for path dependencies, and may therefore contain sensitive information and not be reproducible.</p>
+</div></details></section></div></main></body></html>
